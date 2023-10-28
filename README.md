@@ -173,6 +173,9 @@ document.write("hasil : ",nilai," ", hasil);
 ![pict9](https://github.com/DimasF3009/Lab5web/assets/115356128/99295466-b1aa-487a-80db-474fdbda79c6)
 
 
+## Penggunaan operator switch untuk seleksi kondisi
+
+
 
 
 
