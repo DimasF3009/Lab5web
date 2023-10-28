@@ -222,6 +222,69 @@ document.write("hasil : ",nilai," ", hasil);
 ### Hasil
 ![collage](https://github.com/DimasF3009/Lab5web/assets/115356128/e3ab2a88-dff4-4ab8-8400-b17892521460)
 
+## Form Input
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan js</title>
+</head>
+<body>
+    <form method="post" name="kirim">
+        <p>BIL <input type="text" name="T1" size="20"></p>
+        <p>Merupakan BIL <input type="text" name="T2" size="20"></p>
+        <p><input type="button" name="B1" value="Tebak" onclick="test()" ></p>
+    </form>
+</body>
+<script>
+    function test(){
+        var val1=document.kirim.T1.value
+        if(val1 %2==0)
+            document.kirim.T2.value="Genap"
+        else
+            document.kirim.T2.value="Ganjil"
+    }
+</script>
+</html>
+```
+### Hasil
+<img width="393" alt="Screenshot 2023-10-28 163208" src="https://github.com/DimasF3009/Lab5web/assets/115356128/0b6ec428-f448-4e7d-ac84-c58b6a129163">
+
+## Form Button
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan js</title>
+</head>
+<body>
+    <form>
+        <input type="button" value="Hijau" onclick="back('green')">
+        <input type="button" value="putih" onclick="back('white')">
+        <input type="button" value="teks kuning" onclick="teks('yellow')">
+        <input type="button" value="teks biru" onclick="teks('blue')">
+ 
+    </form>
+</body>
+<script>
+    function back(warna){
+        document.bgColor = warna;
+    }
+    function teks(warna){
+        document.fgColor = warna;
+    }
+    document.write("Dimodifikasi terakhir pada"+document.lastModified)
+</script>
+</html>
+```
+### Hasil
+<img width="457" alt="Screenshot 2023-10-28 164435" src="https://github.com/DimasF3009/Lab5web/assets/115356128/eded1e89-1a8b-4438-8795-ab6a6330fe75">
+
+
 
 
 
