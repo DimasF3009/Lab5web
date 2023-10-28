@@ -21,6 +21,7 @@
 </script>
 </html>
 ```
+### Hasil
 ![pict1](https://github.com/DimasF3009/Lab5web/assets/115356128/454c3835-1434-42b8-bab0-a1bc74f7e813)
 
 
@@ -42,6 +43,7 @@
 </script>
 </html>
 ```
+### Hasil
 ![pict2](https://github.com/DimasF3009/Lab5web/assets/115356128/2bad3446-bdfb-4b92-af46-8635ebab830a)
 
 
@@ -64,6 +66,7 @@
 </script>
 </html>
 ```
+### Hasil
 ![pict3](https://github.com/DimasF3009/Lab5web/assets/115356128/a6aaf25f-809a-498f-86ce-ff50cf403374)
 
 
@@ -85,6 +88,7 @@
 </script>
 </html>
 ```
+### Hasil
 ![Pict4](https://github.com/DimasF3009/Lab5web/assets/115356128/6cfe1bd3-5fbf-4cd5-a8b3-246467641412)
 
 ![Pict5](https://github.com/DimasF3009/Lab5web/assets/115356128/39ecb4df-aeeb-4018-b655-b93536ef6ad5)
@@ -109,6 +113,7 @@
 </script>
 </html>
 ```
+### Hasil
 ![pict6](https://github.com/DimasF3009/Lab5web/assets/115356128/d45be6fd-1ea2-4691-9c07-be01a74ce4c8)
 
 
@@ -141,6 +146,7 @@
 </script>
 </html>
 ```
+### Hasil
 ![pict7](https://github.com/DimasF3009/Lab5web/assets/115356128/4f69de16-3f96-409f-8c78-c706140a3027)
 
 
@@ -168,13 +174,53 @@ document.write("hasil : ",nilai," ", hasil);
 </script>
 </html>
 ```
+### Hasil
 ![pict8](https://github.com/DimasF3009/Lab5web/assets/115356128/4fea0890-8122-4193-b7b8-4eb23abf5332)
 
 ![pict9](https://github.com/DimasF3009/Lab5web/assets/115356128/99295466-b1aa-487a-80db-474fdbda79c6)
 
 
 ## Penggunaan operator switch untuk seleksi kondisi
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan js</title>
+</head>
+<body>
+    <input type="button" name="button1" value="Switch" onclick="test()">
 
+</body>
+<script>
+    function test(){
+        vall = window.prompt("input nilai (1-5):")
+        switch(vall){
+            case "1":
+                document.write("Bilangan satu")
+                break
+            case "2":
+                document.write("Bilangan dua")
+                break
+            case "3":
+                document.write("Bilangan tiga")
+                break
+            case "4":
+                document.write("Bilangan empat")
+                break
+            case "5":
+                document.write("Bilangan lima")
+                break
+            default:
+            document.write("bilangan lainya")
+        }
+    }
+</script>
+</html>
+```
+### Hasil
+![collage](https://github.com/DimasF3009/Lab5web/assets/115356128/e3ab2a88-dff4-4ab8-8400-b17892521460)
 
 
 
