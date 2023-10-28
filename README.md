@@ -144,6 +144,35 @@
 ![pict7](https://github.com/DimasF3009/Lab5web/assets/115356128/4f69de16-3f96-409f-8c78-c706140a3027)
 
 
+## Pengkondisian JS (If else)
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar JS</title>
+</head>
+<body>
+    <h1>BELAJAR JS</h1>
+</body>
+<script>
+    var nilai = prompt("masukan nilai (0-100): ");
+    var hasil = " ";
+    if (nilai >= 75)
+        hasil = "lulus";
+    else
+        hasil="gagal";
+document.write("KKM 75<br>");
+document.write("hasil : ",nilai," ", hasil);
+</script>
+</html>
+```
+![pict8](https://github.com/DimasF3009/Lab5web/assets/115356128/4fea0890-8122-4193-b7b8-4eb23abf5332)
+
+![pict9](https://github.com/DimasF3009/Lab5web/assets/115356128/99295466-b1aa-487a-80db-474fdbda79c6)
+
+
 
 
 
