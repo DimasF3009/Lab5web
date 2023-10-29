@@ -284,7 +284,45 @@ document.write("hasil : ",nilai," ", hasil);
 ### Hasil
 <img width="457" alt="Screenshot 2023-10-28 164435" src="https://github.com/DimasF3009/Lab5web/assets/115356128/eded1e89-1a8b-4438-8795-ab6a6330fe75">
 
+## DOM Menggunakan Check Box
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Menu</title>
+</head>
+<body>
+    <h1>Daftar Menu Makanan</h1>
+    <label><input type="checkbox" value="5000" id="Menu1" onclick="hitung(this) ;"/>Ayam Goreng Rp. 5.000</label><br />
+    <label><input type="checkbox" value="500" id="Menu2" onclick="hitung(this) ;" />Tempe Goreng Rp. 500</label><br />
+    <label><input type="checkbox" value="2500" id="Menu3" onclick="hitung(this) ;" />Telur Dadar Rp. 2.500</label><hr />
+    <strong>Total Bayar : Rp.<input id="total" type="text" /></strong>
+</body>
+<script>
+    function hitung(ele) {
+        var total = document.getElementById("total").value;
+            total = (total ? parseInt(total):0);
+        var harga = 0;
 
+        if (ele.checked) {
+            harga = ele.value;
+            total += parseInt(harga);
+        } 
+        else {
+            harga = ele.value;
+            if(total > 0)
+                total -= parseInt(harga);
+        }
+        document.getElementById("total").value = total;
+    }
+</script>
+</html>
+```
+
+### Hasil
+![pict12](https://github.com/DimasF3009/Lab5web/assets/115356128/5ff952b8-5158-4a97-a8db-f73de82895b5)
 
 
 
