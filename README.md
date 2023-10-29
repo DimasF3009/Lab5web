@@ -325,13 +325,98 @@ document.write("hasil : ",nilai," ", hasil);
 ![pict12](https://github.com/DimasF3009/Lab5web/assets/115356128/5ff952b8-5158-4a97-a8db-f73de82895b5)
 
 
+## Buat script untuk melakukan validasi pada isian form.
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+.form{
+    border: 2px solid #000;
+    padding: 20px; 
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: aquamarine;
+}
+.login{
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 5px 10px black;
+}
+</style>
+<body>
+   <div class="main">
+        <form action="proses.php" method="post" class="form" onsubmit="return Validasi()">
+            <div class="login">
+                Sign Up
+            </div>
+            <p>
+                <label for="name">Nama:</label><br>
+                <input type="text" id="name" name="name" required placeholder="Masukkan Nama Anda">
+            </p>
+            <p>
+                <label for="email">Email:</label><br>
+                <input type="text" name="email" id="email" required placeholder="Masukkan Email Anda">
+            </p>
+            <p>
+                <label for="password">Password:</label><br>
+                <input type="password" name="password" id="password" required placeholder="Masukkan Password Anda">
+            </p>
+            <p>
+                <label for="jk">Jenis Kelamin</label><br>
+                <input type="radio" id="jk_p" name="kelamin" value="P">
+                <label for="html">Perempuan</label>
+                <input type="radio" id="jk_l" name="kelamin" value="L">
+                <label for="jk_l">Laki-laki</label>
+            </p>
 
+            <p align = "center">
+                <input type="submit" value="Sign Up">
+            </p>
+        </form>
+   </div>
+</body>
+<script>
+    function Validasi() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
 
+        if (name === "") {
+            alert("Nama tidak boleh kosong");
+            return false;
+        }
 
+        if (email === "") {
+            alert("Email tidak boleh kosong");
+            return false;
+        }
 
+        if (password.length < 8) {
+            alert("Password minimal 8 karakter");
+            return false;
+        }
+    }
+</script>
+</html>
+```
 
+### Code
+![pict13](https://github.com/DimasF3009/Lab5web/assets/115356128/fe8314b7-6779-4dc2-a3ba-b8448e10d6d2)
 
-
+### Hasil
+<img width="362" alt="pict14" src="https://github.com/DimasF3009/Lab5web/assets/115356128/2b36ca0d-dfc7-4658-953e-d80bf17e7883">
 
 
 
